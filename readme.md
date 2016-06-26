@@ -1,5 +1,14 @@
 # shamir-secret-sharing-web
-Badges to be added here.
+[![Build Status](https://travis-ci.org/marcinlawnik/shamir-secret-sharing-web.svg?branch=master)](https://travis-ci.org/marcinlawnik/shamir-secret-sharing-web)
+[![Latest Stable Version](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/version)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
+[![Latest Unstable Version](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/v/unstable)](//packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
+[![Dependency Status](https://www.versioneye.com/user/projects/57702ba0671894004fedd384/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57702ba0671894004fedd384)
+[![Total Downloads](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/downloads)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
+[![Monthly Downloads](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/d/monthly)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
+[![License](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/license)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
+[![composer.lock available](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/composerlock)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
+
+
 
 This is a web interface for using the Shamir Secret Sharing Scheme (ssss), based on the teqneers/shamir library.
 

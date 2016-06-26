@@ -32,7 +32,7 @@
         "phpunit/phpunit": "~4.0",
         "edgedesign/phpqa": "1.*",
         "sebastian/phpcpd": "dev-master",
-        "ext-xsl": "*"
+        "php-xsl": "*"
     },
     "autoload": {
         "psr-4": {

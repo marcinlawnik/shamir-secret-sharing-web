@@ -33,7 +33,6 @@ class RoutesTest extends TestCase
                 'action' => 'share'
             ]
         );
-//        dd($this->response->getOriginalContent());
 
         $this->assertEquals(200, $this->response->getStatusCode());
 
