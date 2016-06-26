@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
+if [ "${TRAVIS_PHP_VERSION}" != "hhvm" ]; then
     phpenv config-rm xdebug.ini
 fi
