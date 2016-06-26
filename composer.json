@@ -1,9 +1,20 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
+    "name": "shamir-secret-sharing-web",
+    "description": "A website to share and recover secrets using Shamir's Secret Sharing Scheme (ssss)",
+    "keywords": ["shamir", "sharing", "secret", "scheme", "web", "website"],
     "license": "MIT",
     "type": "project",
+    "authors": [
+        {
+            "name": "Marcin Lawniczak",
+            "email": "marcin@lawniczak.me",
+            "homepage": "http://lawniczak.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "marcin@lawniczak.me"
+    },
     "repositories": [
         {
             "type": "git",
