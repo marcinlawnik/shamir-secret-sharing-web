@@ -18,3 +18,7 @@ git:
 script:
   - composer check-cli
   - phpunit
+
+addons:
+    code_climate:
+        repo_token: 3d65feeba3b0e98a328af15de41902ad66aafce45c8fdf9164e2e9f55af38407

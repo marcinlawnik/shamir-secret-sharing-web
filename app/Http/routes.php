@@ -61,9 +61,9 @@ $app->post('/', function (Request $request) use ($app) {
                 $sharesAmount,
                 $sharesThreshold
             );
-        } catch (Exception $e) {
+        } catch (Exception $exception) {
             $status = 'error';
-            $response = $e->getMessage();
+            $response = $exception->getMessage();
         }
     }
 
@@ -74,9 +74,9 @@ $app->post('/', function (Request $request) use ($app) {
         try {
             $status = 'success';
             $response = Secret::recover(array_filter($shares));
-        } catch (Exception $e) {
+        } catch (Exception $exception) {
             $status = 'error';
-            $response = $e->getMessage();
+            $response = $exception->getMessage();
         }
     }
 
