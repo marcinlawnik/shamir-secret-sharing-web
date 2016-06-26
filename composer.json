@@ -29,10 +29,10 @@
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
-        "phpunit/phpunit": "~4.0",
+        "phpunit/phpunit": "~5.0",
         "edgedesign/phpqa": "1.*",
         "sebastian/phpcpd": "dev-master",
-        "php-xsl": "*"
+        "ext-xsl": "*"
     },
     "autoload": {
         "psr-4": {
