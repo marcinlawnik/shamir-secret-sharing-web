@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f77e831bc2b3902bc98cac61e2d6d5a",
-    "content-hash": "d54efb97303cde88b726d07619ed5356",
+    "hash": "26e879b70ece43891cf60f8c63ffd0c1",
+    "content-hash": "47e4145fa6dc594828de7838f8342290",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2162,8 +2162,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:teqneers/shamir.git",
+                "url": "https://github.com/teqneers/shamir.git",
                 "reference": "6b9b756e30ed4bbe0838a6dd849bccec143d94fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teqneers/shamir/zipball/6b9b756e30ed4bbe0838a6dd849bccec143d94fb",
+                "reference": "6b9b756e30ed4bbe0838a6dd849bccec143d94fb",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9",
@@ -2198,6 +2204,10 @@
                     "homepage": "http://opensource.teqneers.de/"
                 }
             ],
+            "support": {
+                "source": "https://github.com/teqneers/shamir/tree/master",
+                "issues": "https://github.com/teqneers/shamir/issues"
+            },
             "time": "2016-06-01 12:56:18"
         },
         {
@@ -4898,5 +4908,7 @@
     "platform": {
         "php": ">=5.5.9"
     },
-    "platform-dev": []
+    "platform-dev": {
+        "ext-xsl": "*"
+    }
 }

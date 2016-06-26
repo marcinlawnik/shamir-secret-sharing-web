@@ -1,0 +1,18 @@
+sudo: false
+
+install:
+  - composer install
+
+language: php
+php:
+  - '5.5'
+  - '5.6'
+  - '7.0'
+  - hhvm
+
+git:
+  depth: 3
+
+script:
+  - composer check-build
+  - phpunit
