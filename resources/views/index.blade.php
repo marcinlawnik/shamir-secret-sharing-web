@@ -1,6 +1,10 @@
+<?php
+// @codingStandardsIgnoreFile
+?>
 <!doctype html>
 
 <html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,7 +95,8 @@
     <script>
         function add_fields() {
             var div = document.createElement("div");
-            div.innerHTML = '<p><label for="share">Share:</label><input type="text" name="shares[]" id="share"></p>\r\n';
+            div.innerHTML =
+                    '<p><label for="share">Share:</label><input type="text" name="shares[]" id="share"></p>\r\n';
             document.getElementById('secret_parts').appendChild(div);
         }
     </script>

@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests;
+
 class RoutesTest extends TestCase
 {
     /**
@@ -14,7 +16,8 @@ class RoutesTest extends TestCase
         $this->assertEquals(200, $this->response->getStatusCode());
 
         $this->assertContains(
-            $this->app->version(), $this->response->getContent()
+            $this->app->version(),
+            $this->response->getContent()
         );
     }
 }

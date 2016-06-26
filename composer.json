@@ -29,7 +29,10 @@
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "~4.0",
+        "edgedesign/phpqa": "1.*",
+        "sebastian/phpcpd": "dev-master",
+        "ext-xsl": "*"
     },
     "autoload": {
         "psr-4": {
@@ -45,6 +48,15 @@
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
+        ],
+        "check-cli": [
+            "\"vendor/bin/phpqa\" --output cli --ignoredDirs=vendor,.idea --verbose"
+        ],
+        "check-build": [
+            "\"vendor/bin/phpqa\" --quiet --buildDir bulid --ignoredDirs=vendor,.idea --report"
+        ],
+        "serve": [
+            "php -S localhost:8000 -t public public/index.php"
         ]
     }
 }

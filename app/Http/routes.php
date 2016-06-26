@@ -14,7 +14,8 @@ use TQ\Shamir\Secret;
 */
 
 $app->get('/', function () use ($app) {
-    return view('index',
+    return view(
+        'index',
         [
             'version' => $app->version(),
             'status' => null
@@ -26,7 +27,7 @@ $app->post('/', function () use ($app) {
 
     // Check if action was sent
 
-    if(!isset($_POST['action']) || trim($_POST['action']) == '') {
+    if (!isset($_POST['action']) || trim($_POST['action']) == '') {
         throw new \Exception('No action specified.');
     }
 
@@ -34,9 +35,7 @@ $app->post('/', function () use ($app) {
 
     if ($_POST['action'] === 'share') {
         $action = 'share';
-
         try {
-
             //Check if fields are not empty
             $fields = [
                 'secret',
@@ -44,17 +43,17 @@ $app->post('/', function () use ($app) {
                 'shares_threshold'
             ];
             foreach ($fields as $field) {
-                if(!isset($_POST[$field]) || trim($_POST[$field]) == ''){
+                if (!isset($_POST[$field]) || trim($_POST[$field]) == '') {
                     throw new \Exception('All of the fields are required.');
                 }
             }
 
-            if(!filter_var($_POST['shares_threshold'], FILTER_VALIDATE_INT)
+            if (!filter_var($_POST['shares_threshold'], FILTER_VALIDATE_INT)
                 || !filter_var($_POST['shares_amount'], FILTER_VALIDATE_INT)) {
                 throw new \Exception('The threshold and amount of shares must be integers.');
             }
 
-            if($_POST['shares_threshold'] > $_POST['shares_amount']) {
+            if ($_POST['shares_threshold'] > $_POST['shares_amount']) {
                 throw new \Exception('The threshold must be lower than or equal to the amount of shares.');
             }
 
@@ -64,12 +63,10 @@ $app->post('/', function () use ($app) {
                 $_POST['shares_amount'],
                 $_POST['shares_threshold']
             );
-
         } catch (Exception $e) {
             $status = 'error';
             $response = $e->getMessage();
         }
-
     }
     
     // Recover
@@ -86,7 +83,8 @@ $app->post('/', function () use ($app) {
     }
     
     // Return response
-    return view('index',
+    return view(
+        'index',
         [
             'version' => $app->version(),
             'data' => json_encode($_POST),
