@@ -2,7 +2,6 @@ sudo: false
 
 install:
   - env
-  - chmod +x ./scripts/disable-xdebug.sh
   - ./scripts/disable-xdebug.sh
   - composer install
 
@@ -14,9 +13,6 @@ php:
 
 git:
   depth: 3
-
-before_script:
-  - echo "Start!"
 
 script:
   - composer check-cli
