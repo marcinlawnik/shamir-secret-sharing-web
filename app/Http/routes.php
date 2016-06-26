@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
+use Illuminate\Http\Request as Request;
 use TQ\Shamir\Secret;
 
 $app->get('/', function () use ($app) {
