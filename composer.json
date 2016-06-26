@@ -52,10 +52,10 @@
             "php -r \"copy('.env.example', '.env');\""
         ],
         "check-cli": [
-            "\"vendor/bin/phpqa\" --output cli --ignoredDirs=vendor,.idea --verbose"
+            "\"vendor/bin/phpqa\" --output cli --ignoredDirs=vendor,.idea --verbose --execution no-parallel"
         ],
         "check-build": [
-            "\"vendor/bin/phpqa\" --quiet --buildDir bulid --ignoredDirs=vendor,.idea --report"
+            "\"vendor/bin/phpqa\" --quiet --buildDir bulid --ignoredDirs=vendor,.idea --report --execution no-parallel"
         ],
         "serve": [
             "start php -S localhost:8000 -t public public/index.php"

@@ -16,5 +16,5 @@ before_script:
   - phpenv config-rm xdebug.ini
 
 script:
-  - composer check-build
+  - composer check-cli
   - phpunit
