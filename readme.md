@@ -5,6 +5,7 @@ More important badges:
 [![Latest Stable Version](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/version)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
 [![Dependency Status](https://www.versioneye.com/user/projects/57702ba0671894004fedd384/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57702ba0671894004fedd384)
 [![StyleCI](https://styleci.io/repos/61990996/shield)](https://styleci.io/repos/61990996)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/marcinlawnik/shamir-secret-sharing-web/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/marcinlawnik/shamir-secret-sharing-web/?branch=master)
 [![Code Climate](https://codeclimate.com/github/marcinlawnik/shamir-secret-sharing-web/badges/gpa.svg)](https://codeclimate.com/github/marcinlawnik/shamir-secret-sharing-web)
 [![License](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/license)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
 
