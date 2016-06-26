@@ -12,6 +12,9 @@ php:
 git:
   depth: 3
 
+before_script:
+  - phpenv config-rm xdebug.ini
+
 script:
   - composer check-build
   - phpunit
