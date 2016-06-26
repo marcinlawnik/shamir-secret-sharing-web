@@ -22,8 +22,11 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
+
+    // Cron commands
+    // https://laravel.com/docs/5.2/scheduling
     protected function schedule(Schedule $schedule)
     {
-        //
+        $schedule->command('cache:clear')->dailyAt('18:00');
     }
 }

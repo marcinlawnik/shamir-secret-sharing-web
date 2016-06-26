@@ -16,6 +16,11 @@ You can use the built-in php web server lby using this command and navigating to
 
 
 Start using.
+
+If you want to use scheduled cron tasks for cache cleaning, add this to your crontab (optional):
+
+    * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
+    
 ## License
 
 The shamir-secret-sharing-web project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
