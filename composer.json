@@ -58,6 +58,9 @@
             "\"vendor/bin/phpqa\" --quiet --buildDir bulid --ignoredDirs=vendor,.idea --report"
         ],
         "serve": [
+            "start php -S localhost:8000 -t public public/index.php"
+        ],
+        "serve-linux": [
             "php -S localhost:8000 -t public public/index.php"
         ]
     }
