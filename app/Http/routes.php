@@ -29,9 +29,9 @@ $app->post('/', function (Request $request) use ($app) {
     // Share
 
     if ($action === 'share') {
-        $sharesThreshold = $request->input('shares_threshold');
-        $sharesAmount = $request->input('shares_amount');
-        $secret = $request->input('secret');
+        $sharesThreshold = (string) $request->input('shares_threshold');
+        $sharesAmount = (string) $request->input('shares_amount');
+        $secret = (string) $request->input('secret');
         try {
             //Check if fields are not empty
             $fields = [

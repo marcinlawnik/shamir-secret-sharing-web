@@ -5,6 +5,7 @@ More important badges:
 [![Latest Stable Version](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/version)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
 [![Dependency Status](https://www.versioneye.com/user/projects/57702ba0671894004fedd384/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57702ba0671894004fedd384)
 [![StyleCI](https://styleci.io/repos/61990996/shield)](https://styleci.io/repos/61990996)
+[![Code Climate](https://codeclimate.com/github/marcinlawnik/shamir-secret-sharing-web/badges/gpa.svg)](https://codeclimate.com/github/marcinlawnik/shamir-secret-sharing-web)
 [![License](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/license)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
 
 Less important badges:
@@ -14,6 +15,7 @@ Less important badges:
 [![composer.lock available](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/composerlock)](https://packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
 [![Latest Unstable Version](https://poser.pugx.org/marcinlawnik/shamir-secret-sharing-web/v/unstable)](//packagist.org/packages/marcinlawnik/shamir-secret-sharing-web)
 ![](https://reposs.herokuapp.com/?path=marcinlawnik/shamir-secret-sharing-web&style=flat)
+[![Issue Count](https://codeclimate.com/github/marcinlawnik/shamir-secret-sharing-web/badges/issue_count.svg)](https://codeclimate.com/github/marcinlawnik/shamir-secret-sharing-web)
 
 This is a web interface for using the Shamir Secret Sharing Scheme (ssss), based on the teqneers/shamir library.
 
