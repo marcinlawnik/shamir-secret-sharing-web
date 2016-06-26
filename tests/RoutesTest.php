@@ -27,10 +27,10 @@ class RoutesTest extends TestCase
             'POST',
             '/',
             [
-                'secret' => 'test',
-                'shares_amount' => 4,
+                'secret'           => 'test',
+                'shares_amount'    => 4,
                 'shares_threshold' => 2,
-                'action' => 'share'
+                'action'           => 'share',
             ]
         );
 
