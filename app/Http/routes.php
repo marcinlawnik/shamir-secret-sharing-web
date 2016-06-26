@@ -1,24 +1,23 @@
 <?php
 
-use TQ\Shamir\Secret;
 use Illuminate\Http\Request;
+use TQ\Shamir\Secret;
 
 $app->get('/', function () use ($app) {
     return view(
         'index',
         [
             'version' => $app->version(),
-            'status' => null
+            'status'  => null,
         ]
     );
 });
 
 $app->post('/', function (Request $request) use ($app) {
-
     $response = 'An error ocurred';
-    
+
     // Set up post values
-    
+
     $action = $request->input('action');
 
     // Check if action was sent
@@ -38,7 +37,7 @@ $app->post('/', function (Request $request) use ($app) {
             $fields = [
                 'secret',
                 'shares_amount',
-                'shares_threshold'
+                'shares_threshold',
             ];
             foreach ($fields as $field) {
                 $fieldValue = $request->input($field);
@@ -67,7 +66,7 @@ $app->post('/', function (Request $request) use ($app) {
             $response = $e->getMessage();
         }
     }
-    
+
     // Recover
 
     if ($action === 'recover') {
@@ -80,17 +79,17 @@ $app->post('/', function (Request $request) use ($app) {
             $response = $e->getMessage();
         }
     }
-    
+
     // Return response
     return view(
         'index',
         [
-            'version' => $app->version(),
-            'action' => $action,
-            'status' => (empty($status)) ? null : $status,
-            'response' => json_encode($response),
-            'shareAmount' => (empty($sharesAmount)) ? null : $sharesAmount,
-            'shareThreshold' => (empty($sharesThreshold)) ? null : $sharesThreshold
+            'version'        => $app->version(),
+            'action'         => $action,
+            'status'         => (empty($status)) ? null : $status,
+            'response'       => json_encode($response),
+            'shareAmount'    => (empty($sharesAmount)) ? null : $sharesAmount,
+            'shareThreshold' => (empty($sharesThreshold)) ? null : $sharesThreshold,
         ]
     );
 });
