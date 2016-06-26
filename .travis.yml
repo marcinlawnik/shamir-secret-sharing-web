@@ -1,6 +1,8 @@
 sudo: false
 
 install:
+  - env
+  - ./scripts/disable-xdebug.sh
   - composer install
 
 language: php
@@ -13,8 +15,7 @@ git:
   depth: 3
 
 before_script:
-  - env
-  - ./scripts/disable-xdebug.sh
+  - echo "Start!"
 
 script:
   - composer check-cli
