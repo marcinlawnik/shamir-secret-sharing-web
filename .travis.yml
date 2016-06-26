@@ -2,6 +2,7 @@ sudo: false
 
 install:
   - env
+  - chmod +x ./scripts/disable-xdebug.sh
   - ./scripts/disable-xdebug.sh
   - composer install
 
