@@ -1,5 +1,5 @@
 {
-    "name": "shamir-secret-sharing-web",
+    "name": "marcinlawnik/shamir-secret-sharing-web",
     "description": "A website to share and recover secrets using Shamir's Secret Sharing Scheme (ssss)",
     "keywords": ["shamir", "sharing", "secret", "scheme", "web", "website"],
     "license": "MIT",
