@@ -13,7 +13,8 @@ git:
   depth: 3
 
 before_script:
-  - phpenv config-rm xdebug.ini
+  - env
+  - ./scripts/disable-xdebug.sh
 
 script:
   - composer check-cli
