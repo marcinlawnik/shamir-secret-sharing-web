@@ -7,6 +7,8 @@
 
 This is a web interface for using the Shamir Secret Sharing Scheme (ssss), based on the teqneers/shamir library.
 
+More info [in the Wikipedia article](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
+
 ## License
 
 The shamir-secret-sharing-web project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
